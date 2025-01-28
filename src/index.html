@@ -31,7 +31,7 @@
             padding: 50px;
             border-radius: 8px;
             border-bottom: 2px white solid;
-            color: rgb(219, 255, 12);
+            color: white;
             background-image: radial-gradient(rebeccapurple, purple);
         }
         li a{
@@ -86,8 +86,15 @@
                 <li><a href="mailto:hakimkavuma99@gmail.com">Email</a></li>
                 <li><a href="tel:+256759802726">Phone</a></li>
                 <li><a href="https://t.me/+256759802726">Telegram</a></li>
-                <li><a href="testing.txt" download="Test.txt">Download</a></li>
+                <li><a href="testing.txt" id="dl" download="Test.txt">Download</a></li>
             </ul>
     </main>
+    <script>
+        function mes(){
+            alert("Downloading Test.txt")
+        }
+        let dl = document.getElementById("dl")
+        dl.addEventListener("click", mes)
+    </script>
 </body>
 </html>
